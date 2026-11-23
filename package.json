@@ -1,0 +1,73 @@
+{
+  "name": "dsh-session-delete-easy",
+  "version": "1.0.0",
+  "description": "Permanently delete a DeepSeek Harness session from the session menu: its conversation log on disk, its workspace membership, its archive and pin state, and its cached projections. The harness itself can only archive.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "ぐ新起點Ю",
+    "email": "345545854@qq.com"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "harness",
+    "cordis",
+    "plugin",
+    "session",
+    "delete",
+    "erase",
+    "remove",
+    "cleanup",
+    "workspace",
+    "archive",
+    "history"
+  ],
+  "engines": {
+    "node": ">=22.6",
+    "dsh": ">=0.2.2-rc.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yanis1024/dsh-session-delete-easy.git"
+  },
+  "homepage": "https://github.com/Yanis1024/dsh-session-delete-easy#readme",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./client.js": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "market"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

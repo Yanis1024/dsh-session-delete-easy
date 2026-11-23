@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session deletion",
+    "description": "Adds a Delete session row to the sidebar session menu, in the destructive color the built-in delete actions use, with a confirmation dialog. Deleting a session is permanent: its conversation log on disk, its place in the workspace list, its archive and pin state, and its cached projections are removed. The shipped harness can only archive a session. A session that is still open in this harness is hidden immediately and its log is deleted the next time the harness starts, because the running harness owns that open log. It also gives the agent the session_delete and session_delete_list tools. Turning the bundle off removes the menu row, the dialog, the tools, and the route; sessions already deleted stay deleted."
+  }
+}

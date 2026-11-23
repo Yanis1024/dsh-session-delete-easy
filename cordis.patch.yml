@@ -1,0 +1,8 @@
+# dsh-session-delete-easy bundle patch: inserts the plugin into a profile's layer stack.
+# The Host half owns the deletion operation, the agent tools, and the
+# `/api/session-delete-easy` route; the Client half adds the sidebar menu entry.
+- insert:
+    - id: session-delete-easy
+      name: 'dsh-session-delete-easy'
+      config:
+        sweepDelayMs: 4000
