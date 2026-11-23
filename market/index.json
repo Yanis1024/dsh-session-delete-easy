@@ -1,8 +1,8 @@
 {
   "format": 1,
   "title": {
-    "zh": "会话永久删除 · Session Erase",
-    "en": "Session Erase"
+    "zh": "会话永久删除 · Session Delete Easy",
+    "en": "Session Delete Easy"
   },
   "description": {
     "zh": "把 DeepSeek Harness 的会话彻底删掉（日志/归属/归档/缓存），而不只是归档。",
@@ -25,7 +25,7 @@
       "name": "dsh-session-delete-easy",
       "title": {
         "zh": "会话永久删除",
-        "en": "Session erase"
+        "en": "Session delete (permanent)"
       },
       "description": {
         "zh": "在会话菜单里加一项「删除会话」：删掉对话日志、工作区归属、归档/置顶状态与投影缓存。仍打开的会话先隐藏，下次启动时删除日志。另含 session_delete / session_delete_list 两个工具。",
@@ -61,9 +61,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1795416574,
+          "publishTimestamp": 1795417778,
           "source": {
-            "type": "npm"
+            "type": "git",
+            "url": "https://github.com/Yanis1024/dsh-session-delete-easy",
+            "commit": "d39bad041c00c2aed913613165e5fa3ad4c322b1"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1"
