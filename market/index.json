@@ -31,7 +31,7 @@
         "zh": "在会话菜单里加一项「删除会话」：删掉对话日志、工作区归属、归档/置顶状态与投影缓存。仍打开的会话先隐藏，下次启动时删除日志。另含 session_delete / session_delete_list 两个工具。",
         "en": "Adds Delete session to the session menu: removes the conversation log, workspace membership, archive and pin state, and cached projections. A session still open is hidden now and erased at the next start. Also registers the session_delete and session_delete_list tools."
       },
-      "icon": "https://raw.githubusercontent.com/Yanis1024/dsh-session-delete-easy/main/icon.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/Yanis1024/dsh-session-delete-easy@main/icon.svg",
       "author": "ぐ新起點Ю",
       "homepage": "https://github.com/Yanis1024/dsh-session-delete-easy#readme",
       "repository": {
@@ -60,12 +60,22 @@
       },
       "versions": [
         {
-          "version": "1.0.0",
-          "publishTimestamp": 1795418137,
+          "version": "1.0.1",
+          "publishTimestamp": 1795506344,
           "source": {
-            "type": "git",
-            "url": "https://github.com/Yanis1024/dsh-session-delete-easy",
-            "commit": "d39bad041c00c2aed913613165e5fa3ad4c322b1"
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        },
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795505809,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1"

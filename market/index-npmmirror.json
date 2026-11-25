@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "会话永久删除 · Session Delete Easy",
+    "en": "Session Delete Easy"
+  },
+  "description": {
+    "zh": "把 DeepSeek Harness 的会话彻底删掉（日志/归属/归档/缓存），而不只是归档。",
+    "en": "Permanent session deletion for DeepSeek Harness, not just archiving."
+  },
+  "metadata": {
+    "categories": {
+      "session": {
+        "title": {
+          "zh": "会话与消息",
+          "en": "Sessions & messages"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-session-delete-easy",
+      "title": {
+        "zh": "会话永久删除",
+        "en": "Session delete (permanent)"
+      },
+      "description": {
+        "zh": "在会话菜单里加一项「删除会话」：删掉对话日志、工作区归属、归档/置顶状态与投影缓存。仍打开的会话先隐藏，下次启动时删除日志。另含 session_delete / session_delete_list 两个工具。",
+        "en": "Adds Delete session to the session menu: removes the conversation log, workspace membership, archive and pin state, and cached projections. A session still open is hidden now and erased at the next start. Also registers the session_delete and session_delete_list tools."
+      },
+      "icon": "https://cdn.jsdelivr.net/gh/Yanis1024/dsh-session-delete-easy@main/icon.svg",
+      "author": "ぐ新起點Ю",
+      "homepage": "https://github.com/Yanis1024/dsh-session-delete-easy#readme",
+      "repository": {
+        "url": "https://github.com/Yanis1024/dsh-session-delete-easy"
+      },
+      "metadata": {
+        "category": "session",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek-harness",
+          "harness",
+          "cordis",
+          "plugin",
+          "session",
+          "delete",
+          "erase",
+          "remove",
+          "cleanup",
+          "workspace",
+          "archive",
+          "history"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "1.0.1",
+          "publishTimestamp": 1795506344,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmmirror.com/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        },
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795505809,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmmirror.com/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}
